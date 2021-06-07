@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Career Cliniq</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/2d5bbc128e.js"></script>
+	</head>
+	<style>
+	.navbar {
+			transition: all 0.6s;
+			}
+	.navbar {
+				background-color:rgba(0,0,0,0.14)
+			}
+	.navbar .nav-link 
+	{
+			color: #fff;
+	}
+
+	.navbar .nav-link:hover
+	{
+	
+		color: #A2ADB3;
+   
+	}
+
+	.navbar .navbar-brand 
+	{
+		color: #fff;
+	}
+
+
+	.navbar.active
+	{
+		background: #fff;
+		box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.navbar.active .nav-link 
+	{
+		color: #293B48;
+	}
+
+
+	.navbar.active .navbar-brand
+	{
+		color: #293B48;
+	}
+	.navbar.active .nav-link:hover
+	{
+	
+		color: #3498DB;
+   
+	}
+
+
+	@media (max-width: 991px)
+	{
+		.navbar
+		{
+			background: #fff;
+		}
+
+		.navbar .navbar-brand, .navbar .nav-link 
+		{
+			color: #293B48;
+		}
+	}
+	@keyframes mymoves
+	{
+		from {bottom: 100px;}
+		to {bottom:0px;}
+	}
+
+	#home
+	{
+		padding-top:360px;
+		padding-bottom:280px;
+	}
+	#div2
+	{
+		 text-align:left;
+		 padding-right:100px
+	}
+	#div3
+	{
+		 text-align:right;
+		
+	}
+	@media (max-width:768px)
+	{
+		#home{
+		padding-top:235px;
+		padding-bottom:100px;
+		}
+		
+		#div2
+		{
+			text-align:center;
+			padding-top:50px;
+			padding-right:0px;
+		}
+		#div3
+		{
+			text-align:center;
+			padding-left:0px;
+		}
+
+	}
+	
+	.navbar.active2
+	{
+		background: #293B48;
+		box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.navbar.active2 .nav-link 
+	{
+		color: #fff;
+	}
+
+	.navbar.active2 .navbar-brand
+	{
+		color: #fff;
+	}
+	.navbar.active2 .nav-link:hover
+	{
+	
+		color: #b4b4b4;
+   
+	}
+	
+	@media (max-width:768px)
+	{
+		#need
+		{
+			width:300px;
+			height:200px;
+		}
+	}
+
+	#tog
+	{
+		color:#209FF3;
+		font-size:28px;
+	}
+		
+	</style>
+	<body style="">
+			
+	<!--navbar------->
+	<nav class="navbar fixed-top navbar-expand-lg " >
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="VIBRANT LOGO.png" style="height:40px;width:40px;padding:5px;margin-top:-4px"><strong >CAREER CLINIQ</strong>
+      </a>
+
+      <!-- Collapse --><button type="button" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarContent" id="spanbutton" >
+							<span class="navbar-toggler-icon" ><i class="fas fa-bars" id="tog"></i></span>
+						</button>
+	
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" style="font-weight:bold;background-color:rgba(255,255,255,0.3)">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"  >About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="phases.html"  >Phases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="challenges.html" >Challenges</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/vibrantsos" class="nav-link" target="_blank" >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/Vibrant55338582" class="nav-link" target="_blank" >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+		  <li class="nav-item">
+            <a href="https://www.instagram.com/vibrantedu2019/" class="nav-link" target="_blank" >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/vibrant-schoolofsuccess-2b263a166/" class="nav-link" target="_blank" >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link border border-light rounded">
+              <i class="fas fa-phone-alt">+91 98407448000</i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+  
+  <div class="container-fluid" style="background:url('bg3.jpg');background-repeat: no-repeat; background-size: cover;" id="top">
+  <div class="container" id="home" style="text-align:center;margin-top:16%;position:relative;;margin-top:-100px;">
+	<h1 style="margin-bottom:40px;color:white;font-family:arial">Career Cliniq</h1>
+	<p style="margin-bottom:40px;color:white;font-size:21px;font-family:Arial">Get accessed and trained to reach your goal. We bring into this world an application specially designed to reach the individual in 360°</p>
+	<button class= "bg-transparent" id="reg" style="border:3px solid white;border-radius:5px;padding:10px 60px;font-size:24px;cursor:pointer"><a href="registration.html" style="color:white;text-decoration:none">REGISTER<i class="far fa-edit" style="margin-left:10px"></i></a></button>
+  </div>
+  </div>
+
+
+	<div class="container-fluid" style="text-align:center" id="why">
+			<div class="row mt-5 pt-4 mb-5">
+				<div class="col-md-6">
+					<img src="need.jpg" id="need" height="250px" width="400px" style="box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.6);">
+				</div>
+				<div class="col-md-6 mb-4" id="div2">
+
+            
+				<h3 class="h3 mb-3" style="color:#1AABF3">Why do people need Career Cliniq </h3>
+				<hr>
+				<p>There are thousands of students and young people who are job seekers and doesn’t know how to attain their dream job.
+				So career cliniq comes to the rescue by providing counselling for those people and guide them along the way in their career</p>
+         
+				<hr>
+
+				<p>
+				<strong>3200+</strong> Foreign Followers,
+				<strong>3700</strong> Students Enrolled,
+				<strong>5000+</strong> Students Enrolled,
+				<strong>1080</strong> Certified Teachers,
+				<strong>With the years of research experience , the programs are designed to resolve the challenges personally and professionally.</strong>
+				</p>
+
+            
+
+          </div>
+			</div>
+	
+	</div>
+			<br><hr style="width:80%"><br>
+	<div class="container-fluid mx-auto my-auto" style="text-align:center">
+				<h2 class="h2 mb-5" style="color:#0D0897;">Challenges an individual face with respect to Career</h2>
+				<br class="pb-5 mb-5"><br class="pb-5 mb-5">
+				<!-----row 1,2--------------------->
+				<div class="row">
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-1" >
+								<i class="fas fa-check-circle" style="color:#0E98FB;font-size:36px"></i>
+							</div>
+							<div class="col-11" style="text-align:center;padding-bottom:50px">
+								<h4>Personality Traits</h4>
+								<p style="color:#9a9a9a;font-size:18px">Personality traits reflect people's characteristic patterns of thoughts, feelings, and behaviors.</p>
+							</div>
+							<div class="col-1">
+								<i class="fas fa-check-circle" style="color:#0E98FB;font-size:36px"></i>
+							</div>
+							<div class="col-11" style="text-align:center;padding-bottom:50px">
+								<h4>Self-Awareness</h4>
+								<p style="color:#9a9a9a;font-size:18px">What makes us self-conscious is a combination of mental, physical, and contextual factors.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 pb-5 " >
+					
+						<img src="charts.jpg" id="need" width="400px" height="250px" style="box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);">
+					
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-1" >
+								<i class="fas fa-check-circle" style="color:#0E98FB;font-size:36px"></i>
+							</div>
+							<div class="col-11" style="text-align:center;padding-bottom:50px">
+								<h4>Communicate</h4>
+								<p style="color:#9a9a9a;font-size:18px">Respecting others' points of view through engagement and interest. </p>
+							</div>
+							<div class="col-1">
+								<i class="fas fa-check-circle" style="color:#0E98FB;font-size:36px"></i>
+							</div>
+							<div class="col-11" style="text-align:center;padding-bottom:50px">
+								<h4>Delegate</h4>
+								<p style="color:#9a9a9a;font-size:18px">A person authorized or sent to speak and act for others; representative, as at a convention</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-----row 1,2 end--------------------->
+	
+	
+	
+				<!-----row 3,4--------------------->
+	            <div class="row">
+					<div class="col-md-3">
+						<div class="row">
+							<div class="col-1" >
+								<i class="fas fa-check-circle" style="color:#0E98FB;font-size:36px"></i>
+							</div>
+							<div class="col-11" style="text-align:center;padding-bottom:50px">
+								<h4>Cultivate Wisdom</h4>
+								<p style="color:#9a9a9a;font-size:18px">Leaders cultivate wisdom in others when they genuinely respect differences and those who disrupt the status quo for the betterment of a healthier whole.</p>
+							</div>
+							<div class="col-1">
+								<i class="fas fa-check-circle" style="color:#0E98FB;font-size:36px"></i>
+							</div>
+							<div class="col-11" style="text-align:center;padding-bottom:50px">
+								<h4>Agility and Adaptability</h4>
+								<p style="color:#9a9a9a;font-size:18px"> Adaptability as a skill refers to the ability of a person to change his actions, course or approach to doing things in order to suit a new situation.  </p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-3">
+						<div class="row">
+							<div class="col-1" >
+								<i class="fas fa-check-circle" style="color:#0E98FB;font-size:36px"></i>
+							</div>
+							<div class="col-11" style="text-align:center;padding-bottom:50px">
+								<h4>Effect Change</h4>
+								<p style="color:#9a9a9a;font-size:18px"><q>Effect Changes</q> means to create new changes. Effect is the result of a change or course of action. It has the power or ability to influence or produce a result</p>
+							</div>
+							<div class="col-1">
+								<i class="fas fa-check-circle" style="color:#0E98FB;font-size:36px"></i>
+							</div>
+							<div class="col-11" style="text-align:center;padding-bottom:50px">
+								<h4>Resume</h4>
+								<p style="color:#9a9a9a;font-size:18px">Resume works like your job hunt marketing document.It's created in order to help a candidate to land a new job.  </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="row">
+							<div class="col-1" >
+								<i class="fas fa-check-circle" style="color:#0E98FB;font-size:36px"></i>
+							</div>
+							<div class="col-11" style="text-align:center;padding-bottom:50px">
+								<h4>Grooming</h4>
+								<p style="color:#9a9a9a;font-size:18px">Grooming will give you the confidence to dress up, look presentable and confident every day while hitting your workplace.</p>
+							</div>
+							<div class="col-1">
+								<i class="fas fa-check-circle" style="color:#0E98FB;font-size:36px"></i>
+							</div>
+							<div class="col-11" style="text-align:center;padding-bottom:50px">
+								<h4>Body Language</h4>
+								<p style="color:#9a9a9a;font-size:18px"> Nonverbal signals that we use to communicate. These nonverbal signals plays a major role in daily communication  </p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-3">
+						<div class="row">
+							<div class="col-1" >
+								<i class="fas fa-check-circle" style="color:#0E98FB;font-size:36px"></i>
+							</div>
+							<div class="col-11" style="text-align:center;padding-bottom:50px">
+								<h4>Stability</h4>
+								<p style="color:#9a9a9a;font-size:18px">A stable routine gives your life structure and makes you feel in control. Being stable means you will enjoy steady pay and benefits, and reduced stress levels</p>
+							</div>
+							<div class="col-1">
+								<i class="fas fa-check-circle" style="color:#0E98FB;font-size:36px"></i>
+							</div>
+							<div class="col-11" style="text-align:center;padding-bottom:50px">
+								<h4>Skill based Tests</h4>
+								<p style="color:#9a9a9a;font-size:18px"> Skill assessment tests are tests designed to help employers evaluate the skills of their job candidates and employees </p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--row 3,4  end----------------------->
+	
+	<hr style="width:80%">
+	
+	
+	</div>
+	
+	
+	
+	<div class="container-fluid pb-2 " style="text-align:center">
+			<div class="row mt-5 pt-4 mb-5">
+				<div class="col-md-6 mb-4" id="div3">
+
+            
+				<h3 class="h3 mb-3" style="color:#1AABF3">Who is a career doctor & how they help you </h3>
+				<hr>
+				<p>Career Doctor provide guidance to help acquire the knowledge, information, skills, and experience necessary to identify career options, and narrow them down to make one career decision. This career decision then results in their social, financial and emotional well-being throughout.</p>
+         
+				<hr>
+
+				<p>
+				<strong>Take your first step towards a brightening future. In case you require help use the chat to our direct website on the bottom right corner</strong>
+				</p>
+
+            
+
+				</div>
+				<div class="col-md-6">
+					<img src="challenge.jpg" id="need" height="250px" width="400px" style="box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.6);">
+				</div>
+
+			</div>
+	<hr style="width:80%" class="mb-5">
+			
+		<div class="row">	
+				<div class="col-md-12 " style="text-align:right;">
+					
+					<a href="http://vibrant-education.com/contact.html" target="_blank"><i class="far fa-comments" style="color:#269ff6;font-size:70px;padding-right:20px;cursor:pointer" data-toggle="tooltip"  title="Vibrant Education Chat"></i></a>
+				</div>
+		</div>
+			<div class="row">
+					<a href="#top" style="color:#269FF6;text-decoration:none">Go to top of page</a><a href="#top"><i class="fas fa-sort-up "style="font-size:20px;padding-left:4px;padding-top:7px;color:#269FF6"></i></a>
+			</div>
+	
+	</div>
+	
+	
+		
+	<!---------------------------------------------------->
+		<footer class="page-footer font-small pt-4  " style="background-color:#192630">
+
+  
+		<div class="container-fluid text-center text-md-left" style="color:white">
+
+				<div class="row">
+
+					<div class="col-md-6 mt-md-0 mt-3" >
+
+				
+
+												<h5 class="text-uppercase">CAREER CLINIQ</h5>
+							<p>A Product of VIBRANT EDUCATION</p>
+
+					</div>
+						<hr class="clearfix w-100 d-md-none pb-3">
+
+						<div class="col-md-3 mb-md-0 mb-3">
+
+						<h5 class="text-uppercase">ADDRESS</h5>
+
+        <p >
+         
+            India:Old No-5,New No-17, Arya Gowda Road,West Mambalam, Chennai, Tamil Nadu, India.
+         
+        
+        </p>
+
+      </div>
+      <div class="col-md-3 mb-md-0 mb-3">
+
+      
+        <h5 class="text-uppercase">INFO</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            +91 9840144800
+          </li>
+          <li>
+            info@vibrant-education.com
+          </li>
+          <li>
+            vibrant-education.com
+          </li>
+         
+        </ul>
+									</div>
+      
+					</div>
+
+				</div>
+  
+					<div class="footer-copyright text-center py-2" style="background-color:#3498DB">© 2020 Copyright:
+							<a href="http://vibrant-education.com" style="color:black;text-decoration:none" target="_blank">vibrant education.com</a>
+					</div>
+ 
+
+			</footer>
+
+
+
+	</body>
+	
+	
+	<script>
+	$(function ()
+	{
+		$(window).on('scroll', function ()
+		{
+			 
+			if ( $(window).scrollTop() > 10 )
+			{
+				$('.navbar').addClass('active');
+				if ( $(window).scrollTop() > 700 )
+				{	
+					$('.navbar').removeClass('active');
+					$('.navbar').addClass('active2');
+				
+				}
+				else
+				{	
+					$('.navbar').removeClass('active2');
+					$('.navbar').addClass('active');
+				}
+			} 
+			else 
+			{
+				$('.navbar').removeClass('active');
+				
+				$('.navbar').removeClass('active2');
+			}
+		});
+	});
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+	$(document).ready(function()
+	{	
+		document.getElementById("home").style.animation="mymoves 2s";
+	});
+	</script>

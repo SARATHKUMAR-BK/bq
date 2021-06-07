@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Career Cliniq</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/2d5bbc128e.js"></script>
+	</head>
+	<style>
+	.navbar {
+			transition: all 0.6s;
+			}
+	.navbar {
+				background-color:rgba(0,0,0,0.14)
+			}
+	.navbar .nav-link 
+	{
+			color: #fff;
+	}
+
+	.navbar .nav-link:hover
+	{
+	
+		color: #A2ADB3;
+   
+	}
+
+	.navbar .navbar-brand 
+	{
+		color: #fff;
+	}
+
+
+	.navbar.active
+	{
+		background: #fff;
+		box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.navbar.active .nav-link 
+	{
+		color: #293B48;
+	}
+
+
+	.navbar.active .navbar-brand
+	{
+		color: #293B48;
+	}
+	.navbar.active .nav-link:hover
+	{
+	
+		color: #3498DB;
+   
+	}
+
+
+	@media (max-width: 991px)
+	{
+		.navbar
+		{
+			background: #fff;
+		}
+
+		.navbar .navbar-brand, .navbar .nav-link 
+		{
+			color: #293B48;
+		}
+	}
+	@keyframes mymoves
+	{
+		from {bottom: 100px;}
+		to {bottom:0px;}
+	}
+
+	#home
+	{
+		padding-top:360px;
+		padding-bottom:280px;
+	}
+	#div2
+	{
+		 text-align:left;
+		 padding-right:100px
+	}
+	#div3
+	{
+		 text-align:right;
+		
+	}
+	@media (max-width:768px)
+	{
+		#home{
+		padding-top:235px;
+		padding-bottom:100px;
+		}
+		
+		#div2
+		{
+			text-align:center;
+			padding-top:50px;
+			padding-right:0px;
+		}
+		#div3
+		{
+			text-align:center;
+			padding-left:0px;
+		}
+
+	}
+	
+	.navbar.active2
+	{
+		background: #293B48;
+		box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.navbar.active2 .nav-link 
+	{
+		color: #fff;
+	}
+
+	.navbar.active2 .navbar-brand
+	{
+		color: #fff;
+	}
+	.navbar.active2 .nav-link:hover
+	{
+	
+		color: #b4b4b4;
+   
+	}
+
+
+	#tog
+	{
+		color:#209FF3;
+		font-size:28px;
+	}
+		
+	#p1
+	{
+		width:430px;
+		height:300px;
+	}	
+	@media (min-width:991px)
+	{
+		#p1
+		{
+			width:800px;
+			height:500px;
+		}
+	}
+	
+	#dice
+	{
+		transition: transform 2s;
+		color:#AC07D4;
+		font-size:50px;
+	}
+	#dice:hover
+	{
+		cursor:grab;
+		transform:rotate(180deg);
+	}
+	#award
+	{
+		font-size:30px;
+		color:#00BFFF;
+	}
+	#more1 {display: none;}
+	#more2 {display: none;}
+	#more3 {display: none;}
+	#more4 {display: none;}
+	#more5 {display: none;}
+	#more6 {display: none;}
+	#more7 {display: none;}	
+	
+
+	#moreo1 {display: none;}	
+	#moreo2 {display: none;}	
+	#moreo3 {display: none;}	
+	#moreo4 {display: none;}	
+
+	
+	@media (max-width:768px)
+	{
+		#needmust
+		{
+			width:300px;
+			height:200px;
+		}
+	}
+
+
+	
+	@media (min-width:992px)
+	{
+		#widcard
+		{
+			width:18rem;
+		}
+	}
+	#star
+	{
+		color:#0BC3FB;
+		padding-right:10px;
+	}
+	
+	#cardrow
+	{
+		text-align: justify;
+	}
+	</style>
+	<body >
+			
+	<!--navbar------->
+	<nav class="navbar fixed-top navbar-expand-lg " >
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="VIBRANT LOGO.png" style="height:40px;width:40px;padding:5px;margin-top:-4px"><strong >CAREER CLINIQ</strong>
+      </a>
+
+      <!-- Collapse --><button type="button" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarContent" id="spanbutton" >
+							<span class="navbar-toggler-icon" ><i class="fas fa-bars" id="tog"></i></span>
+						</button>
+	
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"  >About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="phases.html"  >Phases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="font-weight:bold;background-color:rgba(255,255,255,0.3)">Challenges</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/vibrantsos" class="nav-link" target="_blank" >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/Vibrant55338582" class="nav-link" target="_blank" >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+		  <li class="nav-item">
+            <a href="https://www.instagram.com/vibrantedu2019/" class="nav-link" target="_blank" >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/vibrant-schoolofsuccess-2b263a166/" class="nav-link" target="_blank" >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link border border-light rounded">
+              <i class="fas fa-phone-alt">+91 98407448000</i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+  
+  
+  <div class="container-fluid mb-4" style="background:url('snow2.jpg');background-repeat: no-repeat; background-size: cover;" id="top">
+  <div class="container " id="home" style="text-align:center;margin-top:-5%">
+	<p style="margin-bottom:10px;padding-bottom:90px;color:white;font-size:60px;font-family:Arial;font-weight:300">Challenges</p>
+  </div>
+  </div>
+  
+<!--------------------------->
+	
+	<hr class="mt-4"style="width:20%" >
+	
+<!--------------------------->
+	<div class="container-fluid" style="text-align:center" >
+			 <div class="row mt-4 pt-4 mb-5">
+				<div class="col-md-6 ">
+					<img src="ch.jpg" id="needmust" height="250px" width="400px" style="box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.6);">
+				</div>
+				<div class="col-md-6 mb-4" id="div2">
+
+            
+				<h3 class="h3 mb-3" style="color:#1AABF3">What are the challenges an individual might face with regards to Career?</h3>
+			
+				<p><strong>Big time challenge is interview preparation</strong></p>
+				<hr>
+			
+
+				<p style="color:#555;font-weight:400">
+					The challenges an individual might face regarding his/her Career would come under categories like Personality Traits, Self-Awareness, Communicate, Delegate, Agility and Adabtabilty, Cultivate Wisdom,
+					Effect Change, Resume, Grooming, Body Language, Stability, Skill based Tests.
+				</p>
+
+            
+
+          </div>
+			</div>
+	</div>	
+	  <hr style="width:45%" class="mt-5 pt-5" >
+	
+	
+
+<!--------------1st-------------->
+<div class="container-fluid pb-2 " style="text-align:center">
+	<div class="row" style="text-align:center">
+		<div class="col-md-3">
+						<div class="card" id="widcard">
+						  <img class="card-img-top" id="need"src="ptr.jpg" alt="Card image cap">
+						  <div class="card-body">
+							<h5 class="card-title">Personality-Traits<i class="fas fa-book-open pl-2"></i></h5>
+							<p class="card-text" style="color:#555"> Personality traits reflect people's characteristic patterns of thoughts, feelings, and behaviors.<span id="dots1">...</span><span id="more1">
+			  Personality traits imply consistency and stability—someone who scores high on a specific trait like Extraversion is expected to be sociable in different situations and over time.</span>
+            </p>
+							<p class="btn" style="background-color:#D500F2;border:none;color:white"  onclick="myFunction1()" id="myBtn1">Read More<i class="fas fa-info-circle pl-2"></i></p>
+						  </div>
+						</div>
+		</div>
+
+		<div class="col-md-9">
+			<h3 class="h3 mb-3" style="color:#0211A1">Personality-Traits<i class="fas fa-check pl-2"></i></h3>
+				<p><strong>The Personality-Traits includes the following:</strong></p>
+				<div class="container">
+				<div class="row" id="cardrow">
+				<div class="col-md-4" >
+				
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Self-motivated</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Standards</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Confidencec</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Optimism & Positivity</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Accountable</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Courage</p>
+				</div>
+				
+				<div class="col-md-4">
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Engaged</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Character</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Humour</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Passion</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Intergrity</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Respectable</p>
+				</div>
+				
+				<div class="col-md-4">
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Likable</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Ethical</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Loyal</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Charisma</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Love for your Carrer</p>
+				</div>
+				</div>
+				</div>
+		</div>
+		
+	</div>
+</div>	
+<hr style="width:45%" class="mt-3 pt-3 pb-1" >
+<!-----------1st end----------------->
+
+<!--------------2nd-------------->
+<div class="container-fluid pb-2 " style="text-align:center">
+	<div class="row" style="text-align:center">
+		
+		<div class="col-md-9">
+			<h3 class="h3 mb-3" style="color:#0211A1">Self-Awareness<i class="fas fa-check pl-2"></i></h3>
+				<p><strong>The Self-Awareness includes the following:</strong></p>
+				<div class="container">
+				<div class="row" id="cardrow">
+				<div class="col-md-4" >
+				
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Emotional intelligence</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Emotionalcontrol</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Understanding</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Humility</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Discipline</p>
+				</div>
+				
+				<div class="col-md-4">
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Risk management</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Time management</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Self-assurance</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Maturity</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Perspective</p>
+				</div>
+				<div class="col-md-4">
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Project Management</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Intelligent</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Environment</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Opportunity cost</p>
+				
+				</div>
+				
+				
+				</div>
+				</div>
+		</div>
+		<div class="col-md-3">
+						<div class="card" id="widcard">
+						  <img class="card-img-top" id="need" src="self-aware.jpg"  alt="Card image cap">
+						  <div class="card-body">
+							<h5 class="card-title">Self-Awareness<i class="fas fa-book-open pl-2"></i></h5>
+							<p class="card-text" style="color:#555"> What makes us self-conscious is a combination of mental, physical, and contextual factors.<span id="dots2">...</span><span id="more2">
+			  Below, I will present three types of self-awareness: indexical, detached, and social self-awareness. that is necessary to entertain a full range of thoughts about oneself.</span>
+            </p>
+<p class="btn" style="background-color:#D500F2;border:none;color:white"  onclick="myFunction2()" id="myBtn2">Read More<i class="fas fa-info-circle pl-2"></i></p>
+						  </div>
+						</div>
+		</div>
+
+		
+	</div>
+</div>	
+<hr style="width:45%" class="mt-3 pt-3 pb-1" >
+<!-----------2nd end----------------->
+<!--------------3rd-------------->
+<div class="container-fluid pb-2 " style="text-align:center">
+	<div class="row" style="text-align:center">
+		<div class="col-md-3">
+						<div class="card" id="widcard">
+						  <img class="card-img-top" id="need" src="com.jpg" alt="Card image cap">
+						  <div class="card-body">
+							<h5 class="card-title">Communicate<i class="fas fa-book-open pl-2"></i></h5>
+							<p class="card-text" style="color:#555">  a way that others grasp. Respecting others' points of view through engagement and interest.<span id="dots3">...</span><span id="more3">
+			 Using relevant knowledge, know-how, and skills to explain and clarify thoughts and ideas. Listening to others when they communicate, asking questions to better understand.</span>
+            </p>
+							<p class="btn" style="background-color:#D500F2;border:none;color:white"  onclick="myFunction3()" id="myBtn3">Read More<i class="fas fa-info-circle pl-2"></i></p>
+						  </div>
+						</div>
+		</div>
+
+		<div class="col-md-9">
+			<h3 class="h3 mb-3" style="color:#0211A1">Communicate<i class="fas fa-check pl-2"></i></h3>
+				<p><strong>The Communicate includes the following:</strong></p>
+				<div class="container">
+				<div class="row" id="cardrow">
+				<div class="col-md-4" >
+				
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Lead by example</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Relationship builing</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Social skills</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>public speaking skills</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Honesty & Transparency</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Reasonable</p>
+				</div>
+				
+				<div class="col-md-4">
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Boldness</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Listening</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Presence</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Authenticity</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Empathy & compassion</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Ability to confort others</p>
+				</div>
+				
+				<div class="col-md-4">
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Empowerment</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Negotiation skills</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Social savvy</p>
+				</div>
+				</div>
+				</div>
+		</div>
+		
+	</div>
+</div>	
+<hr style="width:45%" class="mt-3 pt-3 pb-1">
+<!-----------3rd end----------------->
+
+<!--------------4th-------------->
+<div class="container-fluid pb-2 " style="text-align:center">
+	<div class="row" style="text-align:center">
+		
+		<div class="col-md-9">
+			<h3 class="h3 mb-3" style="color:#0211A1">Delegate<i class="fas fa-check pl-2"></i></h3>
+				<p><strong>The Delegate includes the following:</strong></p>
+				<div class="container">
+				<div class="row" id="cardrow">
+				<div class="col-md-4" >
+				
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Clarity</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Ability to teach</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Interested in feedback</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Trust in your team</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Ability to inspire</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>ID team strengths</p>
+				</div>
+				
+				<div class="col-md-4">
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Sharing your vision</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Turning vision into reality</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Get the best form others</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>understand what motivates others</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Takes responsibly</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Rewarding</p>
+				</div>
+				
+				<div class="col-md-4">
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Evaluative</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Respect for others</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Set Expetations</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Coaching key people</p>
+				
+				</div>
+				</div>
+				</div>
+		</div>
+		<div class="col-md-3">
+						<div class="card" id="widcard">
+						  <img class="card-img-top" id="need" src="delegate.jpg" alt="Card image cap">
+						  <div class="card-body">
+							<h5 class="card-title">Delegate<i class="fas fa-book-open pl-2"></i></h5>
+							<p class="card-text" style="color:#555"> A person authorized or sent to speak and act for others;<span id="dots4">...</span><span id="more4">
+			  representative, as at a convention.</span>
+            </p>
+							<p class="btn" style="background-color:#D500F2;border:none;color:white"  onclick="myFunction4()" id="myBtn4">Read More<i class="fas fa-info-circle pl-2"></i></p>
+						  </div>
+						</div>
+		</div>
+
+		
+	</div>
+</div>	
+<hr style="width:45%" class="mt-3 pt-3 pb-1">
+<!-----------4th end----------------->
+<!--------------5th-------------->
+<div class="container-fluid pb-2 " style="text-align:center">
+	<div class="row" style="text-align:center">
+		<div class="col-md-3">
+						<div class="card" id="widcard">
+						  <img class="card-img-top" id="need" src="adapt.jpg" alt="Card image cap">
+						  <div class="card-body">
+							<h5 class="card-title">Agility & Adaptability<i class="fas fa-book-open pl-2"></i></h5>
+							<p class="card-text" style="color:#555"> Adaptability as a skill refers to the ability of a person to change his actions, course or approach to doing things in order to suit a<span id="dots5">...</span><span id="more5">
+			  new situation. We constantly change our lifestyles because our world is changing always. ...</span>
+            </p>
+							<p class="btn" style="background-color:#D500F2;border:none;color:white"  onclick="myFunction5()" id="myBtn5">Read More<i class="fas fa-info-circle pl-2"></i></p>
+						  </div>
+						</div>
+		</div>
+
+		<div class="col-md-9">
+			<h3 class="h3 mb-3" style="color:#0211A1">Agility & Adaptability<i class="fas fa-check pl-2"></i></h3>
+				<p><strong>The Agility & Adaptability includes the following:</strong></p>
+				<div class="container">
+				<div class="row" id="cardrow">
+				<div class="col-md-4" >
+				
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Urgency</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i> Decisiveness</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Commitment to vision</p>
+                <p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Consistency</p>	
+                <p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Does not fear mistakes/risk:</p>				
+				</div>
+				
+				<div class="col-md-4">
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i> Ability to pivot</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Open minded</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Tough-minded</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i> Resourceful</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Faces obstacles with grace</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Street smart</p>
+				</div>
+				
+				<div class="col-md-4">
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Make good decisions</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Strategic thinking</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i> Proactive</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Flexible</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Manage setbacks/uncertaint</p>
+				</div>
+				</div>
+				</div>
+		</div>
+		
+	</div>
+</div>	
+<hr style="width:45%" class="mt-3 pt-3 pb-1">
+<!-----------5th end----------------->
+
+<!--------------6th-------------->
+<div class="container-fluid pb-2 " style="text-align:center">
+	<div class="row" style="text-align:center">
+		
+		<div class="col-md-9">
+			<h3 class="h3 mb-3" style="color:#0211A1">Cultivate Wisdoms<i class="fas fa-check pl-2"></i></h3>
+				<p><strong>The Cultivate Wisdoms includes the following:</strong></p>
+				<div class="container">
+				<div class="row" id="cardrow">
+				<div class="col-md-4" >
+				
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Seeks out advice</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Pursue new experiences</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Read, read, read</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i> Curiosity</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Avoid distraction</p>
+				
+				</div>
+				
+				<div class="col-md-4">
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Competence</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i> Focused</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Intentional Learner</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Enjoys The Ride</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Constant Learning</p>
+				</div>
+				
+				<div class="col-md-4">
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Knowledge</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Help Others</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Leadership</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Learning</p>
+				
+				</div>
+				
+				
+				</div>
+				</div>
+		</div>
+		<div class="col-md-3">
+						<div class="card" id="widcard">
+						  <img class="card-img-top"id="need" src="wisdom.jpg" alt="Card image cap">
+						  <div class="card-body">
+							<h5 class="card-title">Cultivate Wisdom<i class="fas fa-book-open pl-2"></i></h5>
+							<p class="card-text" style="color:#555"> Leaders cultivate wisdom in others when they genuinely respect differences and those who disrupt the status quo for the betterment of a healthier whole.<span id="dots6">...</span><span id="more6">
+			  Knowledge is what is gathered over time. Wisdom, in turn, enables us to act properly upon that knowledge. Wisdom is the fitting application of knowledge.</span>
+            </p>
+							<p class="btn" style="background-color:#D500F2;border:none;color:white"  onclick="myFunction6()" id="myBtn6">Read More<i class="fas fa-info-circle pl-2"></i></p>
+						  </div>
+						</div>
+		</div>
+
+		
+	</div>
+</div>	
+<hr style="width:45%" class="mt-3 pt-3 pb-1">
+<!-----------6th end----------------->
+<!--------------7th-------------->
+<div class="container-fluid pb-2 " style="text-align:center">
+	<div class="row" style="text-align:center">
+		<div class="col-md-3">
+						<div class="card" id="widcard">
+						  <img class="card-img-top" id="need"src="ec.jpg" alt="Card image cap">
+						  <div class="card-body">
+							<h5 class="card-title">Effect Change<i class="fas fa-book-open pl-2"></i></h5>
+							<p class="card-text" style="color:#555"> “effect changes” means “to create new changes.” To “affect changes” means “to influence or<span id="dots7">...</span><span id="more7">
+			   modify changes already made.” . effect is the result of a change or course of action. </span>
+            </p>
+							<p class="btn" style="background-color:#D500F2;border:none;color:white"  onclick="myFunction7()" id="myBtn7">Read More<i class="fas fa-info-circle pl-2"></i></p>
+						  </div>
+						</div>
+		</div>
+
+		<div class="col-md-9">
+			<h3 class="h3 mb-3" style="color:#0211A1">Effect Change<i class="fas fa-check pl-2"></i></h3>
+				<p><strong>The Effect Change includes the following:</strong></p>
+				<div class="container">
+				<div class="row" id="cardrow">
+				<div class="col-md-4" >
+				
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i> Improve lives around you</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Foster potential</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Belief that success if shared</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Help other succeed</p>
+				
+				
+				</div>
+				
+				<div class="col-md-4">
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i> Direction</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i> Challenge the process</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Performance driven</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i> Servant/Service</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i> High-energy</p>
+				
+				
+				</div>
+				
+				<div class="col-md-4">
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Assertive</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Independent</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i>Conviction</p>
+				<p style="color:#555;font-weight:400;font-size:16.90px"><i class="fas fa-certificate" id="star"></i> Patience</p>
+				
+				</div>
+				</div>
+				</div>
+		</div>
+		
+	</div>
+</div>	
+<hr style="width:45%" class="mt-4 pt-4" >
+<!-----------7th end----------------->
+
+<!--------------last-------------->
+<div class="container-fluid pb-2 " style="text-align:center">
+	<h2 class="h2 mb-3" style="color:#0211A1">Other Parameters <i class="fas fa-tasks p-3"style="color:#F200F1"></i></h2><br>
+	<div class="row" style="text-align:center">
+	
+		<div class="col-md-3">
+						<div class="card" id="widcard">
+						  <img class="card-img-top" id="need"src="resume.jpg" alt="Card image cap">
+						  <div class="card-body">
+							<h5 class="card-title">Resume<i class="fas fa-graduation-cap pl-2"></i></h5>
+							<p class="card-text" style="color:#555"> A resume is a formal document that a job applicant creates  <span id="dotso1">...</span><span id="moreo1">
+			  to itemize his or her qualifications for a position. </span>
+            </p>
+							<p class="btn btn-primary"  onclick="myFunctiono1()" id="myBtno1">Read More<i class="fas fa-info-circle pl-2"></i></p>
+						  </div>
+						</div>		</div>
+		<div class="col-md-3">
+						<div class="card" id="widcard">
+						  <img class="card-img-top"id="need" src="groom.jpg" alt="Card image cap">
+						  <div class="card-body">
+							<h5 class="card-title">Grooming<i class="fas fa-graduation-cap pl-2"></i></h5>
+							<p class="card-text" style="color:#555"> Grooming will give you the confidence to dress up <span id="dotso2">...</span><span id="moreo2">and look presentable and confident every day while hitting your workplace.</span>
+            </p>
+							<p class="btn btn-primary" onclick="myFunctiono2()" id="myBtno2">Read More<i class="fas fa-info-circle pl-2"></i></p>
+						  </div>
+						</div>		
+		</div>
+		<div class="col-md-3">
+						<div class="card" id="widcard">
+						  <img class="card-img-top"id="need" src="exam.jpg" alt="Card image cap">
+						  <div class="card-body">
+							<h5 class="card-title">Skill Based Tests<i class="fas fa-graduation-cap pl-2"></i></h5>
+							<p class="card-text" style="color:#555">A skills test is an assessment used to provide an unbiased<span id="dotso3">...</span><span id="moreo3">validated evaluation of a candidate's ability to perform the duties listed in the job description</span>
+            </p>
+							<p class="btn btn-primary"  onclick="myFunctiono3()" id="myBtno3">Read More<i class="fas fa-info-circle pl-2"></i></p>
+						  </div>
+						</div>		
+		</div>
+		<div class="col-md-3">
+						<div class="card" id="widcard">
+						  <img class="card-img-top" id="need"src="st.jpg" alt="Card image cap">
+						  <div class="card-body">
+							<h5 class="card-title">Stability<i class="fas fa-graduation-cap pl-2"></i></h5>
+							<p class="card-text" style="color:#555"> A stable routine gives your life structure and makes you<span id="dotso4">...</span><span id="moreo4"> feel in control.  The success of any business is determined by stability in management accounts & finance</span>
+            </p>
+							<p class="btn btn-primary"onclick="myFunctiono4()" id="myBtno4">Read More<i class="fas fa-info-circle pl-2"></i></p>
+						  </div>
+						</div>	
+		</div>		
+	</div>
+</div>	
+<!-----------last end----------------->
+ <hr style="width:80%" class="mt-5"  >	
+  <div class="container-fluid pb-2 " style="text-align:center">
+ 
+	<div class="row">	
+				<div class="col-md-12 " style="text-align:right">
+					
+					<a href="http://vibrant-education.com/contact.html" target="_blank"><i class="far fa-comments" style="color:#269ff6;font-size:70px;padding-right:20px;cursor:pointer" data-toggle="tooltip"  title="Vibrant Education Chat"></i></a>
+				 </div>
+		</div>
+			<div class="row">
+					<a href="#top" style="color:#269FF6;text-decoration:none">Go to top of page</a><a href="#top"><i class="fas fa-sort-up "style="font-size:20px;padding-left:4px;padding-top:7px;color:#269FF6"></i></a>
+			</div>
+</div>
+
+
+	<!---------------------------------------------------->
+		<footer class="page-footer font-small pt-4  " style="background-color:#192630">
+
+  
+		<div class="container-fluid text-center text-md-left" style="color:white">
+
+				<div class="row">
+
+					<div class="col-md-6 mt-md-0 mt-3" >
+
+				
+
+												<h5 class="text-uppercase">CAREER CLINIQ</h5>
+							<p>A Product of VIBRANT EDUCATION</p>
+
+					</div>
+						<hr class="clearfix w-100 d-md-none pb-3">
+
+						<div class="col-md-3 mb-md-0 mb-3">
+
+						<h5 class="text-uppercase">ADDRESS</h5>
+
+        <p >
+         
+            India:Old No-5,New No-17, Arya Gowda Road,West Mambalam, Chennai, Tamil Nadu, India.
+         
+        
+        </p>
+
+      </div>
+      <div class="col-md-3 mb-md-0 mb-3">
+
+      
+        <h5 class="text-uppercase">INFO</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            +91 9840144800
+          </li>
+          <li>
+            info@vibrant-education.com
+          </li>
+          <li>
+            vibrant-education.com
+          </li>
+         
+        </ul>
+									</div>
+      
+					</div>
+
+				</div>
+  
+					<div class="footer-copyright text-center py-2" style="background-color:#3498DB">© 2020 Copyright:
+							<a href="http://vibrant-education.com" style="color:black;text-decoration:none" target="_blank">vibrant education.com</a>
+					</div>
+ 
+
+			</footer>
+
+
+
+	</body>
+	
+	
+	<script>
+	$(function ()
+	{
+		$(window).on('scroll', function ()
+		{
+			 
+			if ( $(window).scrollTop() > 10 )
+			{
+				$('.navbar').addClass('active');
+				if ( $(window).scrollTop() > 700 )
+				{	
+					$('.navbar').removeClass('active');
+					$('.navbar').addClass('active2');
+				
+				}
+				else
+				{	
+					$('.navbar').removeClass('active2');
+					$('.navbar').addClass('active');
+				}
+			} 
+			else 
+			{
+				$('.navbar').removeClass('active');
+				
+				$('.navbar').removeClass('active2');
+			}
+		});
+	});
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+	$(document).ready(function()
+	{	
+		document.getElementById("home").style.animation="mymoves 2s";
+	});
+	
+
+
+function myFunction1() {
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more1");
+  var btnText = document.getElementById("myBtn1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+
+
+function myFunction2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+
+function myFunction3() {
+  var dots = document.getElementById("dots3");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("myBtn3");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+
+
+function myFunction4() {
+  var dots = document.getElementById("dots4");
+  var moreText = document.getElementById("more4");
+  var btnText = document.getElementById("myBtn4");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+
+
+function myFunction5() {
+  var dots = document.getElementById("dots5");
+  var moreText = document.getElementById("more5");
+  var btnText = document.getElementById("myBtn5");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+
+
+
+function myFunction6() {
+  var dots = document.getElementById("dots6");
+  var moreText = document.getElementById("more6");
+  var btnText = document.getElementById("myBtn6");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+
+
+
+function myFunction7() {
+  var dots = document.getElementById("dots7");
+  var moreText = document.getElementById("more7");
+  var btnText = document.getElementById("myBtn7");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+
+
+function myFunctiono1() {
+  var dots = document.getElementById("dotso1");
+  var moreText = document.getElementById("moreo1");
+  var btnText = document.getElementById("myBtno1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+
+function myFunctiono2() {
+  var dots = document.getElementById("dotso2");
+  var moreText = document.getElementById("moreo2");
+  var btnText = document.getElementById("myBtno2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+
+function myFunctiono3() {
+  var dots = document.getElementById("dotso3");
+  var moreText = document.getElementById("moreo3");
+  var btnText = document.getElementById("myBtno3");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+
+function myFunctiono4() {
+  var dots = document.getElementById("dotso4");
+  var moreText = document.getElementById("moreo4");
+  var btnText = document.getElementById("myBtno4");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+
+	</script>
